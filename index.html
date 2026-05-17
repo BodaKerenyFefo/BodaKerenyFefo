@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda de Fefo & Keren</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Lato', 'sans-serif'],
+                    },
+                    colors: {
+                        gold: {
+                            light: '#dfc081',
+                            DEFAULT: '#c5a059',
+                            dark: '#a6823d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background-color: #fcfbf9; }
+        .hero-overlay { background: rgba(0, 0, 0, 0.4); }
+        .border-elegant { border: 1px solid rgba(197, 160, 89, 0.3); }
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        @media (max-width: 768px) {
+            .parallax { background-attachment: scroll; }
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 antialiased">
+
+    <!-- Sección Principal (Hero) -->
+    <header class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <!-- Imagen de fondo elegante -->
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
+                 alt="Decoración de boda elegante" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        
+        <div class="relative z-10 text-white px-4">
+            <p class="uppercase tracking-[0.5em] text-sm mb-6 animate-fade-in">Nuestra Boda</p>
+            <h1 class="font-serif italic text-6xl md:text-8xl mb-6">Fefo & Keren</h1>
+            <div class="w-12 h-[1px] bg-gold mx-auto mb-6"></div>
+            <p class="text-xl md:text-2xl font-light tracking-widest uppercase">11 de Diciembre</p>
+            <p class="mt-4 text-lg font-light tracking-widest uppercase">Villa María, Argentina</p>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 text-white animate-bounce">
+            <a href="#detalles"><i class="fa-solid fa-chevron-down text-2xl"></i></a>
+        </div>
+    </header>
+
+    <!-- Cuenta Regresiva -->
+    <section class="py-16 bg-white border-b border-elegant">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="font-serif text-3xl mb-10 text-gold-dark italic">Comienza la cuenta regresiva...</h2>
+            <div class="grid grid-cols-4 gap-4 md:gap-8">
+                <div class="flex flex-col">
+                    <span id="days" class="text-3xl md:text-5xl font-light text-slate-700">00</span>
+                    <span class="text-xs uppercase tracking-widest text-gold mt-2">Días</span>
+                </div>
+                <div class="flex flex-col">
+                    <span id="hours" class="text-3xl md:text-5xl font-light text-slate-700">00</span>
+                    <span class="text-xs uppercase tracking-widest text-gold mt-2">Horas</span>
+                </div>
+                <div class="flex flex-col">
+                    <span id="minutes" class="text-3xl md:text-5xl font-light text-slate-700">00</span>
+                    <span class="text-xs uppercase tracking-widest text-gold mt-2">Minutos</span>
+                </div>
+                <div class="flex flex-col">
+                    <span id="seconds" class="text-3xl md:text-5xl font-light text-slate-700">00</span>
+                    <span class="text-xs uppercase tracking-widest text-gold mt-2">Segundos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detalles del Evento -->
+    <section id="detalles" class="py-24 px-6 bg-[#fcfbf9]">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl mb-4">Los Esperamos</h2>
+                <p class="text-gold uppercase tracking-widest text-sm">Información del Evento</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Imagen representativa -->
+                <div class="relative group">
+                    <div class="absolute -inset-4 border border-gold/20 translate-x-2 translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-500"></div>
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Pareja de novios" 
+                         class="relative z-10 w-full h-[550px] object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700">
+                </div>
+
+                <!-- Información detallada -->
+                <div class="space-y-10">
+                    <div class="flex gap-6">
+                        <div class="text-gold mt-1 text-2xl"><i class="fa-solid fa-church"></i></div>
+                        <div>
+                            <h3 class="font-serif text-2xl mb-2 italic">Ceremonia</h3>
+                            <p class="text-slate-600 leading-relaxed">
+                                Nos uniremos en matrimonio a las 18:30 hs.<br>
+                                Parroquia Inmaculada Concepción,<br>
+                                Villa María, Córdoba.
+                            </p>
+                            <a href="https://maps.google.com" target="_blank" class="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-gold-dark hover:text-gold transition-colors border-b border-gold-dark">Ver ubicación</a>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6">
+                        <div class="text-gold mt-1 text-2xl"><i class="fa-solid fa-champagne-glasses"></i></div>
+                        <div>
+                            <h3 class="font-serif text-2xl mb-2 italic">Celebración</h3>
+                            <p class="text-slate-600 leading-relaxed">
+                                Luego festejaremos en el Salón de Eventos "El Solar".<br>
+                                Ruta Nacional 158, km 155,<br>
+                                Villa María.
+                            </p>
+                            <a href="https://maps.google.com" target="_blank" class="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-gold-dark hover:text-gold transition-colors border-b border-gold-dark">Cómo llegar</a>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6">
+                        <div class="text-gold mt-1 text-2xl"><i class="fa-solid fa-tie"></i></div>
+                        <div>
+                            <h3 class="font-serif text-2xl mb-2 italic">Código de Vestimenta</h3>
+                            <p class="text-slate-600 text-xl font-bold uppercase tracking-widest">
+                                Formal
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separador con Frase -->
+    <div class="parallax h-[450px] flex items-center justify-center text-white" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1465495910483-0d742e24d17e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        <div class="max-w-2xl text-center px-6">
+            <p class="font-serif italic text-3xl md:text-5xl mb-4">"Donde hay amor, hay vida."</p>
+            <p class="text-sm uppercase tracking-widest font-light">— Mahatma Gandhi</p>
+        </div>
+    </div>
+
+    <!-- RSVP / Confirmación -->
+    <section id="rsvp" class="py-24 px-6 bg-white">
+        <div class="max-w-xl mx-auto text-center">
+            <h2 class="font-serif text-4xl mb-6 italic">Confirmación de Asistencia</h2>
+            <p class="text-slate-500 mb-12">Nos encantaría que nos acompañen en este nuevo comienzo. Por favor, confirmen su presencia antes del 15 de noviembre.</p>
+            
+            <form id="rsvpForm" class="text-left space-y-8 p-10 border border-gold/20 shadow-sm rounded-lg">
+                <div>
+                    <label class="block text-xs uppercase tracking-widest font-bold text-slate-400 mb-2">Nombre y Apellido</label>
+                    <input type="text" required class="w-full border-b border-slate-200 py-3 focus:outline-none focus:border-gold transition-colors text-lg font-light italic bg-transparent">
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-widest font-bold text-slate-400 mb-2">¿Asistirá al evento?</label>
+                    <select required class="w-full border-b border-slate-200 py-3 bg-transparent focus:outline-none focus:border-gold transition-colors text-lg font-light italic">
+                        <option value="">Seleccione una opción</option>
+                        <option value="si">Sí, asistiré</option>
+                        <option value="no">No podré asistir</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-widest font-bold text-slate-400 mb-2">Menú Especial / Observaciones</label>
+                    <input type="text" placeholder="Celíaco, vegetariano, alergias..." class="w-full border-b border-slate-200 py-3 focus:outline-none focus:border-gold transition-colors text-lg font-light italic bg-transparent">
+                </div>
+                <button type="submit" class="w-full bg-slate-900 text-white py-5 uppercase tracking-[0.3em] text-sm font-bold hover:bg-gold-dark transition-all duration-300 mt-8 shadow-xl">
+                    Enviar Respuesta
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="py-16 bg-[#fcfbf9] text-center border-t border-elegant">
+        <p class="font-serif text-3xl italic text-slate-500 mb-2">Fefo & Keren</p>
+        <p class="text-[11px] uppercase tracking-[0.4em] text-slate-400">11 de Diciembre • Villa María, Córdoba</p>
+        <div class="mt-8 text-gold-dark opacity-50">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+    </footer>
+
+    <!-- Script para el contador y envío -->
+    <script>
+        // Fecha del casamiento
+        const weddingDate = new Date("December 11, 2026 18:30:00").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Aseguramos que no muestre números negativos
+            const d = days < 0 ? 0 : days;
+            const h = hours < 0 ? 0 : hours;
+            const m = minutes < 0 ? 0 : minutes;
+            const s = seconds < 0 ? 0 : seconds;
+
+            document.getElementById("days").innerText = d.toString().padStart(2, '0');
+            document.getElementById("hours").innerText = h.toString().padStart(2, '0');
+            document.getElementById("minutes").innerText = m.toString().padStart(2, '0');
+            document.getElementById("seconds").innerText = s.toString().padStart(2, '0');
+        }
+
+        // Actualización en tiempo real
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Manejo del formulario (Simulado)
+        document.getElementById('rsvpForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Muchas gracias. Tu confirmación ha sido recibida correctamente.');
+        });
+    </script>
+</body>
+</html>
