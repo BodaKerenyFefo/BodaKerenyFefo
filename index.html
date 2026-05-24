@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boda de Fefo & Keren</title>
+    <title>Boda de Keren & Fefo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -29,7 +29,7 @@
     <style>
         html { scroll-behavior: smooth; }
         body { background-color: #fcfbf9; }
-        .hero-overlay { background: rgba(0, 0, 0, 0.4); }
+        .hero-overlay { background: rgba(0, 0, 0, 0.45); }
         .border-elegant { border: 1px solid rgba(197, 160, 89, 0.3); }
         .parallax {
             background-attachment: fixed;
@@ -47,19 +47,20 @@
     <!-- Sección Principal (Hero) -->
     <header class="relative h-screen flex items-center justify-center text-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <!-- Imagen de fondo elegante -->
-            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
-                 alt="Decoración de boda elegante" 
-                 class="w-full h-full object-cover">
+            <!-- Usamos la foto real de los novios de fondo -->
+            <img src="Foto para invitacion de casamiento.jpeg" 
+                 alt="Keren y Fefo" 
+                 class="w-full h-full object-cover object-center"
+                 onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'">
             <div class="absolute inset-0 hero-overlay"></div>
         </div>
         
         <div class="relative z-10 text-white px-4">
-            <p class="uppercase tracking-[0.5em] text-sm mb-6 animate-fade-in">Nuestra Boda</p>
-            <h1 class="font-serif italic text-6xl md:text-8xl mb-6">Fefo & Keren</h1>
+            <p class="uppercase tracking-[0.5em] text-xs md:text-sm mb-6">¡Nos casamos!</p>
+            <h1 class="font-serif italic text-6xl md:text-8xl mb-6">Keren & Fefo</h1>
             <div class="w-12 h-[1px] bg-gold mx-auto mb-6"></div>
-            <p class="text-xl md:text-2xl font-light tracking-widest uppercase">11 de Diciembre</p>
-            <p class="mt-4 text-lg font-light tracking-widest uppercase">Villa María, Argentina</p>
+            <p class="text-xl md:text-2xl font-light tracking-widest uppercase">20 de Diciembre</p>
+            <p class="mt-4 text-base md:text-lg font-light tracking-widest uppercase text-gold">Tío Pujio • Córdoba</p>
         </div>
         
         <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 text-white animate-bounce">
@@ -96,44 +97,41 @@
     <section id="detalles" class="py-24 px-6 bg-[#fcfbf9]">
         <div class="max-w-5xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="font-serif text-4xl md:text-5xl mb-4">Los Esperamos</h2>
+                <h2 class="font-serif text-4xl md:text-5xl mb-4">La Celebración</h2>
                 <p class="text-gold uppercase tracking-widest text-sm">Información del Evento</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-12 items-center">
-                <!-- Imagen representativa -->
+                <!-- Foto real de la pareja con marco elegante -->
                 <div class="relative group">
                     <div class="absolute -inset-4 border border-gold/20 translate-x-2 translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-500"></div>
-                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                         alt="Pareja de novios" 
-                         class="relative z-10 w-full h-[550px] object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700">
+                    <img src="Foto para invitacion de casamiento.jpeg" 
+                         alt="Keren y Fefo felices" 
+                         class="relative z-10 w-full h-[550px] object-cover hover:grayscale-0 transition-all duration-700"
+                         onerror="this.src='https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
                 </div>
 
                 <!-- Información detallada -->
                 <div class="space-y-10">
                     <div class="flex gap-6">
-                        <div class="text-gold mt-1 text-2xl"><i class="fa-solid fa-church"></i></div>
+                        <div class="text-gold mt-1 text-2xl"><i class="fa-solid fa-champagne-glasses"></i></div>
                         <div>
-                            <h3 class="font-serif text-2xl mb-2 italic">Ceremonia</h3>
-                            <p class="text-slate-600 leading-relaxed">
-                                Nos uniremos en matrimonio a las 18:30 hs.<br>
-                                Parroquia Inmaculada Concepción,<br>
-                                Villa María, Córdoba.
+                            <h3 class="font-serif text-2xl mb-2 italic">Festejo</h3>
+                            <p class="text-slate-600 leading-relaxed text-lg">
+                                Nos encontramos directamente para brindar y disfrutar a partir de las <strong>18:00 hs</strong>.<br>
+                                <span class="font-bold text-slate-800">Lugar: Puro Pueblo, Tío Pujio</span> (Córdoba).
                             </p>
-                            <a href="https://maps.google.com" target="_blank" class="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-gold-dark hover:text-gold transition-colors border-b border-gold-dark">Ver ubicación</a>
+                            <a href="https://maps.google.com/?q=Puro+Pueblo+Tio+Pujio+Cordoba" target="_blank" class="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-gold-dark hover:text-gold transition-colors border-b border-gold-dark">Cómo llegar con GPS</a>
                         </div>
                     </div>
 
                     <div class="flex gap-6">
-                        <div class="text-gold mt-1 text-2xl"><i class="fa-solid fa-champagne-glasses"></i></div>
+                        <div class="text-gold mt-1 text-2xl"><i class="fa-solid fa-credit-card"></i></div>
                         <div>
-                            <h3 class="font-serif text-2xl mb-2 italic">Celebración</h3>
+                            <h3 class="font-serif text-2xl mb-2 italic">Tarjeta del Evento</h3>
                             <p class="text-slate-600 leading-relaxed">
-                                Luego festejaremos en el Salón de Eventos "El Solar".<br>
-                                Ruta Nacional 158, km 155,<br>
-                                Villa María.
+                                La tarjeta con la carta de Puro Pueblo tiene un valor de <strong class="text-slate-800 text-lg">$40.000 Pesos Argentinos</strong>.
                             </p>
-                            <a href="https://maps.google.com" target="_blank" class="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-gold-dark hover:text-gold transition-colors border-b border-gold-dark">Cómo llegar</a>
                         </div>
                     </div>
 
@@ -141,8 +139,8 @@
                         <div class="text-gold mt-1 text-2xl"><i class="fa-solid fa-tie"></i></div>
                         <div>
                             <h3 class="font-serif text-2xl mb-2 italic">Código de Vestimenta</h3>
-                            <p class="text-slate-600 text-xl font-bold uppercase tracking-widest">
-                                Formal
+                            <p class="text-slate-700 text-xl font-bold uppercase tracking-widest">
+                                Semiformal
                             </p>
                         </div>
                     </div>
@@ -151,28 +149,38 @@
         </div>
     </section>
 
-    <!-- Separador con Frase -->
-    <div class="parallax h-[450px] flex items-center justify-center text-white" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1465495910483-0d742e24d17e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
-        <div class="max-w-2xl text-center px-6">
-            <p class="font-serif italic text-3xl md:text-5xl mb-4">"Donde hay amor, hay vida."</p>
-            <p class="text-sm uppercase tracking-widest font-light">— Mahatma Gandhi</p>
+    <!-- Playlist Cooperativa / Sugerir Temas -->
+    <section class="py-20 px-6 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-2xl mx-auto text-center relative z-10">
+            <span class="text-gold uppercase tracking-[0.3em] text-xs mb-4 inline-block">¿Qué no puede faltar?</span>
+            <h2 class="font-serif text-4xl mb-6 italic text-gold-light">Sugerí tus canciones preferidas</h2>
+            <p class="text-slate-300 mb-10 font-light">Ayudanos a armar la playlist ideal para la fiesta.</p>
+            
+            <form id="musicForm" class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-lg mx-auto">
+                <input type="text" id="songName" required placeholder="Nombre del tema" class="bg-slate-800/80 border border-slate-700 rounded px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-gold transition-colors">
+                <input type="text" id="artistName" required placeholder="Artista / Banda" class="bg-slate-800/80 border border-slate-700 rounded px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-gold transition-colors">
+                <button type="submit" class="bg-gold text-slate-900 font-bold uppercase tracking-wider text-xs py-3 rounded hover:bg-gold-light transition-all duration-300">
+                    Sugerir tema
+                </button>
+            </form>
+            <div id="musicFeedback" class="mt-4 text-emerald-400 text-sm hidden">¡Abriendo WhatsApp para enviar la sugerencia! 🎶</div>
         </div>
-    </div>
+    </section>
 
     <!-- RSVP / Confirmación -->
     <section id="rsvp" class="py-24 px-6 bg-white">
         <div class="max-w-xl mx-auto text-center">
             <h2 class="font-serif text-4xl mb-6 italic">Confirmación de Asistencia</h2>
-            <p class="text-slate-500 mb-12">Nos encantaría que nos acompañen en este nuevo comienzo. Por favor, confirmen su presencia antes del 15 de noviembre.</p>
+            <p class="text-slate-500 mb-12">Nos encantaría que nos acompañen en este momento tan feliz. Por favor, confirmen su presencia antes del 15 de noviembre.</p>
             
             <form id="rsvpForm" class="text-left space-y-8 p-10 border border-gold/20 shadow-sm rounded-lg">
                 <div>
                     <label class="block text-xs uppercase tracking-widest font-bold text-slate-400 mb-2">Nombre y Apellido</label>
-                    <input type="text" required class="w-full border-b border-slate-200 py-3 focus:outline-none focus:border-gold transition-colors text-lg font-light italic bg-transparent">
+                    <input type="text" id="rsvpName" required class="w-full border-b border-slate-200 py-3 focus:outline-none focus:border-gold transition-colors text-lg font-light italic bg-transparent">
                 </div>
                 <div>
                     <label class="block text-xs uppercase tracking-widest font-bold text-slate-400 mb-2">¿Asistirá al evento?</label>
-                    <select required class="w-full border-b border-slate-200 py-3 bg-transparent focus:outline-none focus:border-gold transition-colors text-lg font-light italic">
+                    <select id="rsvpAttendance" required class="w-full border-b border-slate-200 py-3 bg-transparent focus:outline-none focus:border-gold transition-colors text-lg font-light italic">
                         <option value="">Seleccione una opción</option>
                         <option value="si">Sí, asistiré</option>
                         <option value="no">No podré asistir</option>
@@ -180,10 +188,10 @@
                 </div>
                 <div>
                     <label class="block text-xs uppercase tracking-widest font-bold text-slate-400 mb-2">Menú Especial / Observaciones</label>
-                    <input type="text" placeholder="Celíaco, vegetariano, alergias..." class="w-full border-b border-slate-200 py-3 focus:outline-none focus:border-gold transition-colors text-lg font-light italic bg-transparent">
+                    <input type="text" id="rsvpMenu" placeholder="Celíaco, vegetariano, alergias..." class="w-full border-b border-slate-200 py-3 focus:outline-none focus:border-gold transition-colors text-lg font-light italic bg-transparent">
                 </div>
                 <button type="submit" class="w-full bg-slate-900 text-white py-5 uppercase tracking-[0.3em] text-sm font-bold hover:bg-gold-dark transition-all duration-300 mt-8 shadow-xl">
-                    Enviar Respuesta
+                    Enviar Respuesta por WhatsApp
                 </button>
             </form>
         </div>
@@ -191,17 +199,22 @@
 
     <!-- Pie de página -->
     <footer class="py-16 bg-[#fcfbf9] text-center border-t border-elegant">
-        <p class="font-serif text-3xl italic text-slate-500 mb-2">Fefo & Keren</p>
-        <p class="text-[11px] uppercase tracking-[0.4em] text-slate-400">11 de Diciembre • Villa María, Córdoba</p>
+        <p class="font-serif text-3xl italic text-slate-500 mb-2">Keren & Fefo</p>
+        <p class="text-[11px] uppercase tracking-[0.4em] text-slate-400">20 de Diciembre • Tío Pujio, Córdoba</p>
         <div class="mt-8 text-gold-dark opacity-50">
             <i class="fa-solid fa-heart"></i>
         </div>
     </footer>
 
-    <!-- Script para el contador y envío -->
+    <!-- Script para el contador, música y envío -->
     <script>
-        // Fecha del casamiento
-        const weddingDate = new Date("December 11, 2026 18:30:00").getTime();
+        // === CONFIGURACIÓN IMPORTANTE ===
+        // Número de WhatsApp de destino con código de España (34)
+        const CELULAR_DESTINO = "34654968394"; 
+        // =================================
+
+        // Fecha exacta del festejo (20 de Diciembre de 2026, 18:00 hs)
+        const weddingDate = new Date("December 20, 2026 18:00:00").getTime();
 
         function updateCountdown() {
             const now = new Date().getTime();
@@ -212,7 +225,6 @@
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            // Aseguramos que no muestre números negativos
             const d = days < 0 ? 0 : days;
             const h = hours < 0 ? 0 : hours;
             const m = minutes < 0 ? 0 : minutes;
@@ -224,14 +236,47 @@
             document.getElementById("seconds").innerText = s.toString().padStart(2, '0');
         }
 
-        // Actualización en tiempo real
         setInterval(updateCountdown, 1000);
         updateCountdown();
 
-        // Manejo del formulario (Simulado)
+        // Control de sugerencia de canciones por WhatsApp
+        document.getElementById('musicForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const song = document.getElementById('songName').value;
+            const artist = document.getElementById('artistName').value;
+            const feedback = document.getElementById('musicFeedback');
+
+            // Armamos el mensajito para WhatsApp
+            const mensajeMusica = `🎵 ¡Sugerencia de música para el casamiento! \n\n*Tema:* ${song}\n*Artista/Banda:* ${artist}`;
+            const urlEncoded = encodeURIComponent(mensajeMusica);
+            
+            feedback.classList.remove('hidden');
+            
+            setTimeout(() => {
+                feedback.classList.add('hidden');
+                document.getElementById('songName').value = '';
+                document.getElementById('artistName').value = '';
+                // Redirige al WhatsApp
+                window.open(`https://wa.me/${CELULAR_DESTINO}?text=${urlEncoded}`, '_blank');
+            }, 1000);
+        });
+
+        // Manejo de RSVP por WhatsApp
         document.getElementById('rsvpForm').addEventListener('submit', (e) => {
             e.preventDefault();
-            alert('Muchas gracias. Tu confirmación ha sido recibida correctamente.');
+            const nombre = document.getElementById('rsvpName').value;
+            const asistencia = document.getElementById('rsvpAttendance').value;
+            const observaciones = document.getElementById('rsvpMenu').value;
+
+            const confirmacion = asistencia === 'si' ? '✅ ¡Sí, voy de una! Contá conmigo.' : '❌ Lamentablemente no voy a poder ir.';
+            const notas = observaciones ? `\n*A tener en cuenta:* ${observaciones}` : '';
+
+            // Armamos el mensajito para WhatsApp
+            const mensajeAsistencia = `💍 ¡Confirmación de asistencia! \n\n*Nombre:* ${nombre}\n*¿Asiste?:* ${confirmacion}${notas}`;
+            const urlEncoded = encodeURIComponent(mensajeAsistencia);
+
+            // Redirige al WhatsApp
+            window.open(`https://wa.me/${CELULAR_DESTINO}?text=${urlEncoded}`, '_blank');
         });
     </script>
 </body>
